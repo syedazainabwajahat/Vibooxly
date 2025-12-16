@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Hello, world!</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .fa-facebook-f:hover {
+      color: blue;
+    }
+
+    .fa-twitter:hover {
+      color: powderblue;
+    }
+
+    .fa-youtube:hover {
+      color: red;
+    }
+
+    .fa-instagram:hover {
+      color: purple;
+    }
+
+    .fa-pinterest-p:hover {
+      color: red;
+    }
+
+    .fa-linkedin-in:hover {
+      color: cadetblue;
+    }
+
+    /* ====== FOOTER BASE STYLE ====== */
+    footer {
+
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    footer div {
+      min-width: 200px;
+    }
+
+    footer h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer i {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+
+    /* ====== DESKTOP (Large screens) ====== */
+    @media (min-width: 992px) {
+      footer {
+        justify-content: space-between;
+        text-align: left;
+
+      }
+    }
+
+    /* ====== TABLET (768px - 991px) ====== */
+    @media (max-width: 991px) and (min-width: 768px) {
+      footer {
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      footer div {
+        width: 45%;
+      }
+    }
+
+    /* ====== MOBILE (Below 768px) ====== */
+    @media (max-width: 767px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      footer div {
+        width: 100%;
+      }
+
+      footer h2 {
+        font-size: 20px;
+      }
+
+      footer p {
+        font-size: 15px;
+      }
+
+      footer i {
+        font-size: 26px;
+        margin: 6px;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body style="background-color:  #ffdfdf" class="fst-italic">
+
+  <header class="sticky-top">
+
+    <!-- Navbar -->
+    <strong><strong><strong>
+          <nav class="navbar navbar-dark navbar-expand-lg fst-italic fs-4 sticky-top"
+            style="background-color: #96354d;">
+            <div class="container-fluid">
+              <a class="navbar-brand fst-italic" href="#">
+                <h1><strong><strong>Vibooxly</strong></strong></h1>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <center>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+
+
+                  </ul>
+              </center>
+              <form class="d-flex">
+                <input class="form-control me-2 border-dark fst-italic fs-3" type="search" placeholder="Search"
+                  aria-label="Search">
+                <button class="btn btn-outline-danger text-light  fst-italic fs-4 " type="submit">
+                  <strong><strong><i class="fa-notdog fa-solid fa-magnifying-glass"></i></strong></strong></button>
+              </form>
+            </div>
+            </div>
+          </nav>
+        </strong></strong></strong>
+
+  </header>
+
+
+
+
+
+
+  <main class="container my-5">
+
+    <!-- About Us Heading -->
+    <h1 class="fst-italic text-center mb-4" style="color: maroon;"><strong>About Us</strong></h1>
+
+    <!-- About Section -->
+    <div class="row align-items-center">
+      <!-- Text -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="about-text fs-5 text-center" style="color:rgb(79, 5, 79);">
+          <p class="fst-italic">Vibooxly is a space created for people who genuinely love cakes, cookies, and everything
+            baked with care. From rich chocolate layers to soft vanilla crumbs and perfectly baked cookies, this blog
+            celebrates flavors that bring comfort and joy. Every post on Vibooxly focuses on quality, creativity, and
+            the small details that turn simple desserts into memorable experiences.
+          </p>
+          <p class="fst-italic">At Vibooxly, cakes are more than just recipes—they are stories. Each cake featured on
+            the blog highlights textures, ingredients, and techniques that matter, whether it’s a classic sponge or a
+            modern, indulgent creation. The goal is to inspire readers with ideas that feel achievable while still
+            maintaining a premium, bakery-style touch.
+          </p>
+          <p class="fst-italic">Cookies hold a special place at Vibooxly because of their simplicity and versatility.
+            From crunchy favorites to soft, melt-in-the-mouth bites, the blog explores cookie styles that suit every
+            mood and moment. Clear explanations and thoughtful insights make it easy for readers to understand what
+            makes a cookie truly great.
+          </p>
+          <p class="fst-italic">What sets Vibooxly apart is its focus on honesty and balance. The blog avoids
+            unnecessary complexity and instead emphasizes flavors that work, methods that are reliable, and ideas that
+            feel relevant. Whether a reader is baking for the first time or refining their skills, Vibooxly offers
+            content that feels useful, not overwhelming.
+          </p>
+          <p class="fst-italic">Vibooxly continues to grow as a welcoming space for cake and cookie lovers who value
+            authenticity, learning, and inspiration. As the blog evolves, we remain committed to delivering meaningful
+            content that celebrates baking as both an art and a joy worth sharing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-6 text-center">
+        <img src="./ASSESTS/IMAGES/aboutus.png" alt="Frosty Delight" class="img-fluid w-100 h-100 "
+          style="border: 5px solid firebrick;">
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <h1 class="fst-italic text-center my-5" style="color:hotpink;"><strong>This is Vibooxly</strong></h1>
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nIjoVNkDnRA?si=0W6EmRGnXBqRWUGt"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border: 5px solid firebrick;"></iframe>
+      </div>
+    </center>
+  </main>
+
+
+
+
+
+  <!-- Footer -->
+
+  <footer class="d-flex justify-content-between text-light fst-normal" style="background-color: #5A1E2D;">
+
+
+    <div>
+      <h2 class="text-danger">Need Help?</h2>
+      <p>
+        📞+03 111 109 679</p>
+      <p>(Mon - Sat: 9:30am - 10:00pm | Sun: 11am - 8pm)</p>
+      <p>
+        📩eshop@cakerecipiesblog.com</p>
+    </div>
+
+
+    <div>
+      <h2 class="text-primary">Customer Service</h2>
+      <p>Contact Us</p>
+      <p>Delivery & Orders</p>
+      <p>Returns & Exchanges</p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Track My Order</p>
+      <p>Payment Guide</p>
+      <p>Fabric Glossary</p>
+    </div>
+
+
+    <div>
+      <h2 class="text-warning">Company</h2>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>Store Addresses</p>
+      <p>Corporate</p>
+    </div>
+
+
+    <div style=" font-size: 35px;">
+      <h2 class="text-success">Follow Us</h2>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+
+
+
+  </footer>
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

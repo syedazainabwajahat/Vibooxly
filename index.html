@@ -1,0 +1,3393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Hello, world!</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .fa-facebook-f:hover {
+      color: blue;
+    }
+
+    .fa-twitter:hover {
+      color: powderblue;
+    }
+
+    .fa-youtube:hover {
+      color: red;
+    }
+
+    .fa-instagram:hover {
+      color: purple;
+    }
+
+    .fa-pinterest-p:hover {
+      color: red;
+    }
+
+    .fa-linkedin-in:hover {
+      color: cadetblue;
+    }
+
+    /* ====== FOOTER BASE STYLE ====== */
+    footer {
+
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    footer div {
+      min-width: 200px;
+    }
+
+    footer h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer i {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+
+    /* ====== DESKTOP (Large screens) ====== */
+    @media (min-width: 992px) {
+      footer {
+        justify-content: space-between;
+        text-align: left;
+
+      }
+    }
+
+    /* ====== TABLET (768px - 991px) ====== */
+    @media (max-width: 991px) and (min-width: 768px) {
+      footer {
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      footer div {
+        width: 45%;
+      }
+    }
+
+    /* ====== MOBILE (Below 768px) ====== */
+    @media (max-width: 767px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      footer div {
+        width: 100%;
+      }
+
+      footer h2 {
+        font-size: 20px;
+      }
+
+      footer p {
+        font-size: 15px;
+      }
+
+      footer i {
+        font-size: 26px;
+        margin: 6px;
+      }
+    }
+
+    .carousal-img {
+      height: 465px;
+    }
+  </style>
+
+
+</head>
+
+<body style="background-color: #ffdfdf" class="fst-italic">
+  <header class="sticky-top">
+
+    <!-- Navbar -->
+    <strong><strong><strong>
+          <nav class="navbar navbar-dark navbar-expand-lg fst-italic fs-4 sticky-top"
+            style="background-color: #96354d;">
+            <div class="container-fluid">
+              <a class="navbar-brand fst-italic" href="#">
+                <h1><strong><strong>Vibooxly</strong></strong></h1>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <center>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#chocolate">🤎 Coco Mania 🤎</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#vanilla">🍰 Vanilla Hype 🍰</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#cookie">🍪 Crumble & Cookies 🍪</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#bundt">🎀 BUNDTASTIC 🎀</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#dripcake">🎂 Drippy Delight 🎂</a></li>
+
+                      </ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+
+
+                  </ul>
+              </center>
+              <form class="d-flex">
+                <input class="form-control me-2 border-dark fst-italic fs-3" type="search" placeholder="Search"
+                  aria-label="Search">
+                <button class="btn btn-outline-danger text-light  fst-italic fs-4 " type="submit">
+                  <strong><strong><i class="fa-notdog fa-solid fa-magnifying-glass"></i></strong></strong></button>
+              </form>
+            </div>
+            </div>
+          </nav>
+        </strong></strong></strong>
+
+  </header>
+
+
+  <br>
+
+  <main>
+
+
+
+    <!-- Carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 1"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousal-img">
+          <img src="./ASSESTS/IMAGES/carousala.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item carousal-img">
+          <img src="./ASSESTS/IMAGES/carousald.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item carousal-img">
+          <img src="./ASSESTS/IMAGES/carousalb.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item carousal-img">
+          <img src="./ASSESTS/IMAGES/carousale.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item carousal-img">
+          <img src="./ASSESTS/IMAGES/carousalc.webp" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <!-- Cards -->
+
+    <h1 class="text-success text-center fst-italic"><strong><strong>🤎 COCO MANIA 🤎</strong></strong></h1>
+
+    <div class="row m-5" id="chocolate" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6 border-danger" style="max-width: 540px; background-color: rgb(250, 211, 217);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/choclatecakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color: #5A1E2D;"><strong>NUTELLA CHOCO CAKE</strong></h1>
+              <p class="card-text">This Nutella Cake is six layers of pure decadence! Delicious chocolate cake layers,
+                Nutella buttercream, and Nutella ganache.Enjoy this by trying it. </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn  btn-outline-success btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Read More
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">NUTELLA CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Nutella Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/choclatecakea.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Chocolate Cake Recipe for the cake layers. It’s a tried and true favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/choclatecakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Nutella Swiss Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Nutella Banana Cake, and it’s honestly one of the best things ever.
+                  <br>
+                  <br>
+                  Adding something like Nutella or peanut butter to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/choclatecakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Nutella Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Nutella ganache recipe from In Good Taste. I used the same proportions of cream and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Nutella in there that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/choclatecakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Nutella Cake. I’ve used a cake comb before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/choclatecakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Nutella fan or have one in your life, this cake is
+                    for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/choclatecakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-primary fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8 border-info " style="max-width: 540px; background-color: rgb(216, 250, 255);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/ferrerorochercakea.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:midnightblue;"><strong>FERRERO ROCHER CAKE</strong></h1>
+              <p class="card-text">This Ferrero Rocher Cake is your favorite chocolate hazelnut treat in cake form!
+                Chocolate hazelnut cake layers and with a Nutella buttercream. </p>
+              <p class="card-text"><small class="text-muted">Last updated 13 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-success btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">FERRERO ROCHER CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Ferrero Rocher Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/ferrerorochercakea.jpg" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Chocolate Cake Recipe for the cake layers. It’s a tried and true favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/ferrerorochercakeab.jpg" alt=""></center>
+                <h1 class="text-info"><strong>How to make Ferrero Rocher Swiss Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Nutella Banana Cake, and it’s honestly one of the best things ever.
+                  <br>
+                  <br>
+                  Adding something like Nutella or peanut butter to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/ferrerorochercakeac.jpg" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Ferrero Rocher Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Ferrero Rocher ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Ferrero Rocher in there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/ferrerorochercakead.jpg" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Nutella Cake. I’ve used a cake comb before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/ferrerorochercakeae.jpg" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Ferrero Rocher fan or have one in your life, this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/ferrerorochercakeaf.jpg" alt="" width="800px" height="750px">
+
+                <h1 class="text-primary fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row m-5" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6 border-success" style="max-width: 540px;background-color: rgb(217, 255, 217);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/germanchocolatea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:darkgreen;"><strong>GERMAN CHOCOLATE CAKE</strong></h1>
+              <p class="card-text">This classic German Chocolate Cake combines rich chocolate cake layers with a sweet
+                coconut pecan filling and a dreamy chocolate buttercream.Enjoy this recipe. </p>
+              <p class="card-text"><small class="text-muted">Last updated 6 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-success btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal2">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">GERMAN CHOCOLATE CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this German Chocolate Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/germanchocolatea.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Chocolate Cake Recipe for the cake layers. It’s a tried and true favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/germanchocolateab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make German Chocolate Swiss Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Gerrman Chocolate Cake, and it’s honestly one of the best things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like German Chocolate or peanut butter to frosting can be tricky, because not only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/germanchocolateac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make German Chocolate Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this GErman Chocolate ganache recipe from In Good Taste. I used the same proportions of
+                  cream and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Nutella in there that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/germanchocolated.webp alt=""></center>
+                <h1 class=" text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                  <p>
+                    Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the
+                    left
+                    side of the right cake comb from this set for this Nutella Cake. I’ve used a cake comb before, and
+                    it’s honestly my new favorite thing to do.
+                    <br>
+                    <br>
+                    To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                    more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb
+                    and
+                    scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                    take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                    <br>
+                    <br>
+                    You press the cake comb into the side of the cake, and do one continuous sweep while turning your
+                    cake
+                    turntable. After the first pass, you’ll see if you need to add more frosting to certain areas.
+                    Repeat
+                    until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                  </p>
+                  <center><img src="./ASSESTS/IMAGES/germanchocolateae.webp" alt=""></center>
+                  <h3 class="fs-2 text-secondary"><strong>If you’re German Chocolate fan or have one in your life, this
+                      cake is for you! I hope
+                      you love it as much as we did here.</strong></h3>
+                  <br>
+                  <br>
+                  <img src="./ASSESTS/IMAGES/germanchocolateaf.webp" alt="" width="800px" height="750px">
+
+                  <h1 class="text-primary fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8 border-warning" style="max-width: 540px; background-color: rgb(255, 255, 193);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/strawberrychocolatecakea.webp" class="img-fluid rounded-start w-100 h-100"
+              alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:rgb(219, 189, 15);"><strong>CHOCOLATE STRAWBERRY CAKE</strong></h1>
+              <p class="card-text">
+                Take chocolate dipped strawberries to the next level with this dreamy Chocolate Strawberry Cake! Best
+                for chocolate & Strawberry lovers. </p>
+              <p class="card-text"><small class="text-muted">Last updated 19 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-success btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal3">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">CHOCOLATE STRAWBERRY CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Chocolate Strawberry Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/strawberrychocolatecakea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Chocolate Cake Recipe for the cake layers. It’s a tried and true favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/strawberrychocolatecakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Chocolate Strawberry Swiss Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Chocolate Strawberry buttercream before in my Chocolate Strawberry Cake, and it’s honestly one of the
+                  best things ever.
+                  <br>
+                  <br>
+                  Adding something like Chocolate Strawberry to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/strawberrychocolatecakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Chocolate Strawberry Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Ferrero Rocher ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Chocolate Strawberry in there
+                  that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/strawberrychocolatecakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Nutella Cake. I’ve used a cake comb before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/strawberrychocolatecakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Chocolate Strawberry fan or have one in your life,
+                    this cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/strawberrychocolatecakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-primary fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h1 class="text-danger text-center fst-italic"><strong><strong>🍪 CRUMBLE & COOKIES 🍪</strong></strong></h1>
+
+    <div class="row m-5" id="cookie" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6" style="max-width: 540px; background-color: honeydew;border:1px solid navy;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/cookiecupa.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color: cadetblue;"><strong>EGGNOG CHEESECAKE COOKIE CUP</strong></h1>
+              <p class="card-text">These Eggnog Cheesecake Cookie Cups are the best treat for the holidays! Chewy
+                gingerbread cookie cups filled with a fluffy eggnog cheesecake. </p>
+              <p class="card-text"><small class="text-muted">Last updated 7 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-danger btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal8">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EGGNOG CHEESCAKE COOKIE CUP </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Eggnog Cheesecake Cookie Cup:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/cookiecupa.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Eggnog Cheesecake Cookie CupRecipe for the cake layers. It’s a tried and true
+                  favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cookiecupab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Eggnog Cheesecake Cookie Cup Meringue Buttercream:</strong>
+                </h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Pink Champagne buttercream before in my Nutella Banana Cake, and it’s honestly one of the best things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Eggnog Cheesecake Cookie Cup to frosting can be tricky, because not only does it
+                  add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/cookiecupac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Eggnog Cheesecake Cookie Cup Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Eggnog Cheesecake Cookie Cup ganache recipe from In Good Taste. I used the same
+                  proportions of cream
+                  and
+                  Eggnog Cheesecake Cookie Cup but none of the other ingredients, and just microwaved them together
+                  instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Pink Champagne in there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cookiecupad.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Eggnog Cheesecake Cookie Cup. I’ve used a cake comb
+                  before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cookiecupae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Eggnog Cheesecake Cookie Cup fan or have one in your
+                    life, this
+                    cake is
+                    for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/cookiecupaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-warning fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8"
+        style="max-width: 540px; background-color:rgb(227, 177, 177);border: 1px solid brown;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/baileycookiea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:#96354d;"><strong>BAILEYS CHEESCAKE COOKIE CUP</strong></h1>
+              <p class="card-text">Chocolate cookie cups filled with a fluffy chocolate Baileys cheesecake. The perfect
+                bite-sized indulgence!Emjoy this delicious cupcake by trying this recipe. </p>
+              <p class="card-text"><small class="text-muted">Last updated 57sec ago</small></p>
+              <button type="button" class="btn  btn-outline-danger btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal9">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">BAILEYS CHEESCAKE COOKIE CUP </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Baileys Cheesecake Cookie Cup:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/baileycookiea.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Baileys Cheesecake Cookie Cup Recipe for the cake layers. It’s a tried and true
+                  favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/baileycookieab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Baileys Cheesecake Cookie Cup Meringue Buttercream:</strong>
+                </h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Baileys Cheesecake Cookie Cup buttercream before in my Almond Amaretto Cake, and it’s honestly one of
+                  the best things ever.
+                  <br>
+                  <br>
+                  Adding something like Nutella or peanut butter to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/baileycookieac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Baileys Cheesecake Cookie Cup Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Baileys Cheesecake Cookie Cup ganache recipe from In Good Taste. I used the same
+                  proportions of cream
+                  and
+                  Baileys Cheesecake Cookie Cup, but none of the other ingredients, and just microwaved them together
+                  instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Almond Amaretto in there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/baileycookiead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Baileys Cheesecake Cookie Cup. I’ve used a cake
+                  comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/baileycookiea.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Baileys Cheesecake Cookie Cupfan or have one in your
+                    life, this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/baileycookieaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-warning fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row m-5" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6 "
+        style="max-width: 540px;background-color:lavenderblush;border: 1px solid purple;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/redvelvetcookiea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:palevioletred;"><strong>RED VELVET DELIGHT COOKIE CUP</strong></h1>
+              <p class="card-text">These Red Velvet Cookie Cups are a fun and easy treat to make for the one you love!
+                Cinnamon spiced cookies with a fluffy cheesecake filling. </p>
+              <p class="card-text"><small class="text-muted">Last updated 6 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-danger btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal10">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">RED VELVET DELIGHT COOKIE CUP </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Red Velvet Cookie Cup:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/redvelvetcookiea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Red Velvet Cookie Cup Recipe for the cake layers. It’s a tried and true
+                  favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/redvelvetcookieab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Red Velvet Cookie CupMeringue Buttercream:</strong>
+                </h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Red Velvet Cookie Cup, and it’s honestly one of the best things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Red Velvet Cookie Cup or peanut butter to frosting can be tricky, because not
+                  only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/redvelvetcookieac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Red Velvet Cookie Cup Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this GErman Chocolate ganache recipe from In Good Taste. I used the same proportions of
+                  cream and
+                  Red Velvet Cookie Cup, but none of the other ingredients, and just microwaved them together instead of
+                  the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Nutella in there that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/redvelvetcookiead.webp" alt=""></center>
+                <h1 class=" text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the
+                  left
+                  side of the right cake comb from this set for this Red Velvet Cookie Cup. I’ve used a cake comb
+                  before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb
+                  and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your
+                  cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas.
+                  Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/redvelvetcookieab.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re Red Velvet Cookie Cup fan or have one in your life,
+                    this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/redvelvetcookieae.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-warning fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8 border-dark" style="max-width: 540px; background-color:thistle">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/cheescakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:rgb(95, 16, 95);"><strong>STRAWBERRY CHEESECAKE COOKIE CUP</strong>
+              </h1>
+              <p class="card-text">
+                These Strawberry Cheesecake Cookie Cups are the perfect pairing of fruity cheesecake and chewy sugar
+                cookies.enjoy this delightious cookie with crumbs. </p>
+              <p class="card-text"><small class="text-muted">Last updated 43 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-danger btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal11">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">STRAWBERRY CHEESECAKE COOKIE CUP </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Strawberry Cheesecake Cookie Cup:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/cheescakea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Strawberry Cheesecake Cookie Cup Cake Recipe for the cake layers. It’s a tried and
+                  true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cheescakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Strawberry Cheesecake Cookie Cup Meringue
+                    Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Strawberry Cheesecake Cookie Cup buttercream before in my Chocolate Strawberry Cake, and it’s honestly
+                  one of the
+                  best things ever.
+                  <br>
+                  <br>
+                  Adding something like Strawberry Cheesecake Cookie Cup to frosting can be tricky, because not only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/cheescakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Strawberry Cheesecake Cookie Cup Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Strawberry Cheesecake Cookie Cup ganache recipe from In Good Taste. I used the same
+                  proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Strawberry Cheesecake Cookie Cup
+                  in there
+                  that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cheescakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Strawberry Cheesecake Cookie Cup. I’ve used a cake
+                  comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cheescakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Strawberry Cheesecake Cookie Cup fan or have one in
+                    your life,
+                    this cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/cheescakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-warning fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h1 class="text-info text-center fst-italic"><strong><strong>🍰 VANILLA HYPE 🍰</strong></strong></h1>
+
+    <div class="row m-5" id="vanilla" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6" style="max-width: 540px; background-color: lavender;border:1px solid purple;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/pinkchampangecakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color: rgb(142, 142, 255);"><strong>PINK CHAMPAGNE CAKE</strong></h1>
+              <p class="card-text">This Pink Champagne Cake is the perfect way to celebrate any occasion or holiday! A
+                champagne infused cake with a classic vanilla buttercream.. </p>
+              <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal4">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">PINK CHAMPAGNE CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Pink Champagne Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/pinkchampangecakea.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Pink Champagne Cake Recipe for the cake layers. It’s a tried and true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/pinkchampangecakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Pink Champagne Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Pink Champagne buttercream before in my Nutella Banana Cake, and it’s honestly one of the best things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Pink Champagne to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/pinkchampangecakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Pink Champagne Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Pink Champagne ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Pink Champagne in there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/pinkchampangecakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Pink Champagne. I’ve used a cake comb before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/pinkchampangecakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Pink Champagne fan or have one in your life, this
+                    cake is
+                    for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/pinkchampangecakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-info fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8"
+        style="max-width: 540px; background-color: rgb(255, 218, 170);border: 1px solid brown;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/almondcakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:brown;"><strong>ALMOND AMARETTO CAKE</strong></h1>
+              <p class="card-text">This Almond Amaretto Cake is a must for any almond lover! Almond cake layers infused
+                with Amaretto liqueur paired with a classic vanilla buttercream. </p>
+              <p class="card-text"><small class="text-muted">Last updated 8 sec ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal5">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ALMOND AMARETTO CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Almond Amaretto Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/almondcakea.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Almond Amaretto Cake Recipe for the cake layers. It’s a tried and true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/almondcakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Almond Amaretto Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Almond Amaretto Cake, and it’s honestly one of the best things ever.
+                  <br>
+                  <br>
+                  Adding something like Nutella or peanut butter to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/almondcakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Almond Amaretto Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Ferrero Rocher ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Almond Amaretto in there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/almondcakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Almond Amaretto Cake. I’ve used a cake comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/almondcakea.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Almond Amaretto fan or have one in your life, this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/almondcakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-info fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row m-5" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6 " style="max-width: 540px;background-color:ivory;border: 1px solid burlywood;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/whitechocolatemochacakea.webp" class="img-fluid rounded-start w-100 h-100"
+              alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:rgb(220, 220, 164);"><strong>WHITE CHOCOLATE MOCHA CAKE</strong></h1>
+              <p class="card-text">This white chocolate mocha cake pairs tender white chocolate espresso cake layers
+                with a whipped white chocolate ganache and silky espresso buttercream. </p>
+              <p class="card-text"><small class="text-muted">Last updated 6 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal6">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">WHITE CHOCOLATE MOCHA CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this White Chocolate Mocha Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/whitechocolatemochacakea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite White Chocolate Mocha Cake Recipe for the cake layers. It’s a tried and true
+                  favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/whitechocolatemochacakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make White Chocolate Mocha Swiss Meringue Buttercream:</strong>
+                </h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my White Chocolate Mocha Cake, and it’s honestly one of the best things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like White Chocolate Mocha or peanut butter to frosting can be tricky, because not
+                  only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/whitechocolatemochacakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make White Chocolate Mocha Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this GErman Chocolate ganache recipe from In Good Taste. I used the same proportions of
+                  cream and
+                  White Chocolate Mocha, but none of the other ingredients, and just microwaved them together instead of
+                  the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Nutella in there that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/whitechocolatemochacakead.webp" alt=""></center>
+                <h1 class=" text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the
+                  left
+                  side of the right cake comb from this set for this White Chocolate Mocha Cake. I’ve used a cake comb
+                  before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb
+                  and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your
+                  cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas.
+                  Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/whitechocolatemochacakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re White Chocolate Mocha fan or have one in your life,
+                    this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/whitechocolatemochacakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-info fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8 border-dark" style="max-width: 540px; background-color: gainsboro">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/cottoncandycakea.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:grey"><strong>COTTON CANDY FLUFFY CREME CAKE</strong></h1>
+              <p class="card-text">
+                TThis Cotton Candy Cake has pretty marbled layers of light and fluffy cake paired with a cotton candy
+                buttercream! Enjoy your day with this delicious recipe. </p>
+              <p class="card-text"><small class="text-muted">Last updated 43 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal7">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">COTTON CANDY FLUFFY CREME CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Cotton Candy Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/cottoncandycakea.jpg" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Cotton Candy Cake Recipe for the cake layers. It’s a tried and true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cottoncandycakeab.jpg" alt=""></center>
+                <h1 class="text-info"><strong>How to make Cotton Candy Swiss Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  ]Cotton Candy buttercream before in my Chocolate Strawberry Cake, and it’s honestly one of the
+                  best things ever.
+                  <br>
+                  <br>
+                  Adding something like Cotton Candy to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/cottoncandycakeac.jpg" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Cotton Candy Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Cotton Candy ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Chocolate Strawberry in there
+                  that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cottoncandycakead.jpg" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Cotton Candy Cake. I’ve used a cake comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cottoncandycakeae.jpg" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Cotton Candy fan or have one in your life,
+                    this cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/cottoncandycakeaf.jpg" alt="" width="800px" height="750px">
+
+                <h1 class="text-info fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h1 class="text-warning text-center fst-italic"><strong><strong>🎀 BUNDTASTIC 🎀</strong></strong></h1>
+
+    <div class="row m-5" id="bundt" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6"
+        style="max-width: 540px; background-color: #EFE1CF;border:1px solid rgb(111, 89, 48);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/bundtrockya.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color: rgb(120, 91, 38);"><strong>ROCKY ROAD DOUBLE BUNDT CAKE</strong></h1>
+              <p class="card-text">Rocky Road Bundt Cake! Alternating swirls of peanut butter and chocolate cake with a
+                marshmallow glaze topped off with some candied peanuts. </p>
+              <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal12">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ROCKY ROAD DOUBLE BUNDT CAKE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Rocky Road Bundt Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/bundtrockya.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Rocky Road Bundt Cake Recipe for the cake layers. It’s a tried and true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/bundtrockyab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Rocky Road Bundt Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Rocky Road Bundt buttercream before in my Nutella Banana Cake, and it’s honestly one of the best
+                  things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Rocky Road Bundt to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/bundtrockyac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Rocky Road Bundt Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Rocky Road Bundt ganache recipe from In Good Taste. I used the same proportions of
+                  cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Rocky Road Bundt in there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/bundtrockya.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Rocky Road Bundt I’ve used a cake comb before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/bundtrockyad.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Rocky Road Bundt fan or have one in your life, this
+                    cake is
+                    for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/bundtrockyae.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-success fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8" style="max-width: 540px; background-color:#E7EDE2;border: 1px solid olive;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/pumpkinbundta.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:darkolivegreen;"><strong>PUMPKIN SPICE LATTE BUNDT CAKE</strong></h1>
+              <p class="card-text">Turn your favorite Fall beverage into a showstopping cake with this Pumpkin Spice
+                Latte Bundt Cake! Pumpkin & coffee flavored cake with a milk & sugar glaze.</p>
+              <p class="card-text"><small class="text-muted">Last updated 54 sec ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal13">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">PUMPKIN SPICE LATTE BUNDT CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Pumpkin Spice Latte Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/pumpkinbundta.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Pumpkin Spice Latte Cake Recipe for the cake layers. It’s a tried and true
+                  favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/pumpkinbundtab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Pumpkin Spice Latte Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Pumpkin Spice Latte Cake, and it’s honestly one of the best
+                  things ever.
+                  <br>
+                  <br>
+                  Adding something like Nutella or peanut butter to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/pumpkinbundtac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Pumpkin Spice Latte Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Ferrero Rocher ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Pumpkin Spice Latte in
+                  there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/pumpkinbundta.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Pumpkin Spice Latte Cake. I’ve used a cake
+                  comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/pumpkinbundtad.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Pumpkin Spice Latte fan or have one in your
+                    life, this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/pumpkinbundtae.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-success fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-5" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6 " style="max-width: 540px;background-color:#e4f4ff;border: 1px solid blue;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/insidebundta.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:rgb(0, 0, 182);"><strong>INSIDE OUT S'MORES BUNDT CAKE</strong></h1>
+              <p class="card-text">This INSIDE OUT S'MORES BUNDT CAKE pairs tender white chocolate espresso cake layers
+                with a whipped white chocolate ganache and silky espresso buttercream. </p>
+              <p class="card-text"><small class="text-muted">Last updated 6 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal14">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">INSIDE OUT S'MORES BUNDT CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Inside Out S'Mores Bundt Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/insidebundta.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Inside Out S'Mores Bundt Cake Recipe for the cake layers. It’s a tried and true
+                  favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/insidebundtab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Inside Out S'Mores Bundt Swiss Meringue Buttercream:</strong>
+                </h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Inside Out S'Mores Bundt Cake, and it’s honestly one of the best
+                  things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Inside Out S'Mores Bundt or peanut butter to frosting can be tricky, because not
+                  only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/insidebundtac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Inside Out S'Mores Bundt Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this GErman Chocolate ganache recipe from In Good Taste. I used the same proportions of
+                  cream and
+                  White Chocolate Mocha, but none of the other ingredients, and just microwaved them together instead of
+                  the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Nutella in there that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/insidebundtad.webp" alt=""></center>
+                <h1 class=" text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the
+                  left
+                  side of the right cake comb from this set for this Inside Out S'Mores Bundt Cake. I’ve used a cake
+                  comb
+                  before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb
+                  and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your
+                  cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas.
+                  Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/insidebundtae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re Inside Out S'Mores Bundt fan or have one in your life,
+                    this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/insidebundtaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-success fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8 border-danger" style="max-width: 540px; background-color: #F9E6EB">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/cocobundta.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:hotpink"><strong>CHOCOLATE CHEESECAKE STUFFED BUNDT CAKE</strong></h1>
+              <p class="card-text">
+                Double the chocolate in this delicious Chocolate Cheesecake Stuffed Bundt Cake! </p>
+              <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-info btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal15">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">CHOCOLATE CHEESECAKE STUFFED BUNDT CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Chocolate CheeseCake Stuffed Bundt Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/cocobundta.jpg" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Chocolate CheeseCake Stuffed Bundt Cake Recipe for the cake layers. It’s a tried
+                  and true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cocobundtab.jpg" alt=""></center>
+                <h1 class="text-info"><strong>How to make Chocolate CheeseCake Stuffed Bundt Swiss Meringue
+                    Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  ]Chocolate CheeseCake Stuffed Bundt buttercream before in my Chocolate Strawberry Cake, and it’s
+                  honestly one of the
+                  best things ever.
+                  <br>
+                  <br>
+                  Adding something like Chocolate CheeseCake Stuffed Bundt to frosting can be tricky, because not only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/cocobundtac.jpg" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Chocolate CheeseCake Stuffed Bundt Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Chocolate CheeseCake Stuffed Bundt ganache recipe from In Good Taste. I used the same
+                  proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Chocolate Strawberry in there
+                  that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cocobundtad.jpg" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Chocolate CheeseCake Stuffed Bundt Cake. I’ve used
+                  a cake comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/cocobundta.jpg" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Chocolate CheeseCake Stuffed Bundt fan or have one
+                    in your life,
+                    this cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/cocobundtae.jpg" alt="" width="800px" height="750px">
+
+                <h1 class="text-success fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h1 class="text-secondary text-center fst-italic"><strong><strong>🎂 DRIPPY DELIGHT 🎂</strong></strong></h1>
+
+    <div class="row m-5" id="dripcake" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6" style="max-width: 540px; background-color: #fffdf6;border:1px solid black;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/drippuddingcakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color: rgb(156, 151, 151);"><strong>STICKY TOFFEE DELIGHT PUDDING
+                  CAKE</strong></h1>
+              <p class="card-text">This Sticky Toffee Pudding Cake transforms the classic British dessert into a
+                delicious layer cake! Date infused cake layers, vanilla buttercream, and a decadent toffee sauce. </p>
+              <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-secondary btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal16">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">STICKY TOFFEE DELIGHT PUDDING CAKE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Sticky Toffee Pudding Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/drippuddingcakea.webp" alt="" width="600px" height="700px"></center>
+                <p>I used my favorite Sticky Toffee Pudding Cake Recipe for the cake layers. It’s a tried and true
+                  favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/drippuddingcakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Sticky Toffee Pudding Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Sticky Toffee Pudding buttercream before in my Nutella Banana Cake, and it’s honestly one of the best
+                  things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Sticky Toffee Pudding to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/drippuddingcakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Sticky Toffee Pudding Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Sticky Toffee Pudding ganache recipe from In Good Taste. I used the same proportions
+                  of
+                  cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Sticky Toffee Pudding in there
+                  that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/drippuddingcakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Sticky Toffee Pudding I’ve used a cake comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/drippuddingcakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Sticky Toffee Pudding fan or have one in your life,
+                    this
+                    cake is
+                    for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/drippuddingcakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-danger fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8" style="max-width: 540px; background-color:#FFF9E3;border: 1px solid goldenrod;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/mintchocolatechipcakea.webp" class="img-fluid rounded-start w-100 h-100"
+              alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:#dada01;"><strong>MINT CHOCOLATE CHIP CAKE</strong></h1>
+              <p class="card-text">This Mint Chocolate Chip Cake is a mint lover’s dream! Layers of decadent chocolate
+                cake topped with a silky mint chip buttercream.</p>
+              <p class="card-text"><small class="text-muted">Last updated 39 sec ago</small></p>
+              <button type="button" class="btn  btn-outline-secondary btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal17">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">MINT CHOCOLATE CHIP CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Mint Chocolate Chip Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/mintchocolatechipcakea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Mint Chocolate Chip Cake Recipe for the cake layers. It’s a tried and true
+                  favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/mintchocolatechipcakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Mint Chocolate Chip Meringue Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Mint Chocolate Chip Cake, and it’s honestly one of the best
+                  things ever.
+                  <br>
+                  <br>
+                  Adding something like Nutella or peanut butter to frosting can be tricky, because not only does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/mintchocolatechipcakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Mint Chocolate Chip Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Ferrero Rocher ganache recipe from In Good Taste. I used the same proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Mint Chocolate Chip in
+                  there that
+                  were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/mintchocolatechipcakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Mint Chocolate Chip Cake. I’ve used a cake
+                  comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/mintchocolatechipcakea.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Mint Chocolate Chip fan or have one in your
+                    life, this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/mintchocolatechipcakeae.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-danger fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row m-5" style="gap: 20px;">
+
+      <div class="card mb-3 ms-4 col-6 " style="max-width: 540px;background-color:#FFE8D6;border: 1px solid orange;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/turtlecakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:orange;"><strong>TURTLE'S DE LECHE CAKE</strong></h1>
+              <p class="card-text">Transform your favorite candy into this Turtles Cake! Layers of rich chocolate cake,
+                caramel buttercream, caramel sauce, and chopped pecans. </p>
+              <p class="card-text"><small class="text-muted">Last updated 27 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-secondary btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal18">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TURTLE'S DE LECHE CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Turtle's De Leche Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/turtlecakea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Turtle's De Leche Cake Recipe for the cake layers. It’s a tried and true
+                  favorite. These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/turtlecakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Turtle's De Leche Swiss Meringue Buttercream:</strong>
+                </h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  Nutella buttercream before in my Turtle's De Leche Cake, and it’s honestly one of the best
+                  things
+                  ever.
+                  <br>
+                  <br>
+                  Adding something like Turtle's De Leche or peanut butter to frosting can be tricky, because not
+                  only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/turtlecakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Turtle's De Leche Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this GErman Chocolate ganache recipe from In Good Taste. I used the same proportions of
+                  cream and
+                  White Chocolate Mocha, but none of the other ingredients, and just microwaved them together instead of
+                  the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Nutella in there that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/turtlecakead.webp" alt=""></center>
+                <h1 class=" text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the
+                  left
+                  side of the right cake comb from this set for this Turtle's De Leche Cake. I’ve used a cake
+                  comb
+                  before, and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb
+                  and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your
+                  cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas.
+                  Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/turtlecakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re Turtle's De Leche fan or have one in your life,
+                    this
+                    cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/turtlecakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-danger fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-1 "></div>
+      <div class="card mb-3 ms-4 col-8 "
+        style="max-width: 540px; background-color: rgb(255, 217, 255);border: 1px solid purple;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./ASSESTS/IMAGES/bananacakea.webp" class="img-fluid rounded-start w-100 h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-3">
+              <h1 class="card-title" style="color:purple"><strong>BANANA SPLIT CAKE</strong></h1>
+              <p class="card-text">
+                Put a fun new spin on a classic ice cream treat with this decadent Banana Split Cake!Use a fresh banaba
+                pieces and then try this delicious recipeby yourself. </p>
+              <p class="card-text"><small class="text-muted">Last updated 17 mins ago</small></p>
+              <button type="button" class="btn  btn-outline-secondary btn-light fst-italic w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal19">
+                Read More
+              </button>
+            </div>
+            <!-- Button trigger modal -->
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">BANANA SPLIT CAKE </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fst-italic text-center p-5 fs-4">
+                <h1 class="text-success"><strong>How to make this Banana Split Cake:</strong></h1>
+                <center><img src="./ASSESTS/IMAGES/bananacakea.webp" alt="" width="600px" height="700px">
+                </center>
+                <p>I used my favorite Banana Split Cake Recipe for the cake layers. It’s a tried
+                  and true favorite.
+                  These
+                  cake layers had actually been sitting in my freezer (properly wrapped) since September! I originally
+                  made them for a different cake recipe that still hasn’t seen the light of day (and likely won’t).
+                  <br>
+                  <br>
+                  I was worried that the layers would be either dried out or taste funny, but thankfully they were
+                  perfectly fine. I typically don’t recommend freezing cake layers for longer than 3 months though, if
+                  you can help it. But properly wrapped (2x in plastic wrap and then a freezer bag), they can last a bit
+                  longer.
+                  <br>
+                  <br>
+                  I cut each of the layers in half horizontally to get 6 total. This is optional, but I like it better
+                  for the cake to buttercream ratio in this recipe.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/bananacakeab.webp" alt=""></center>
+                <h1 class="text-info"><strong>How to make Banana Split Swiss Meringue
+                    Buttercream:</strong></h1>
+
+                <p>You are going to be eating this buttercream with a spoon! SO good. I’ve made a variation of this
+                  ]Banana Split buttercream before in my Chocolate Strawberry Cake, and it’s
+                  honestly one of the
+                  best things ever.
+                  <br>
+                  <br>
+                  Adding something like Banana Split to frosting can be tricky, because not only
+                  does it add
+                  sweetness, it can change the consistency of the frosting (make it softer) if you add too much. It’s a
+                  delicate balance between getting the flavor through while still having a stable frosting to work with.
+
+                </p>
+
+                <center><img src="./ASSESTS/IMAGES/bananacakeac.webp" alt=""></center>
+                <h1 class="text-warning"><strong>How to make Banana Split Ganache:</strong></h1>
+                <p> In case you haven’t noticed, I’m a big fan of drip cakes. A drippy ganache makes such an impact! And
+                  adds flavor too.
+                  <br>
+                  <br>
+                  I modified this Banana Split ganache recipe from In Good Taste. I used the same
+                  proportions of cream
+                  and
+                  Nutella, but none of the other ingredients, and just microwaved them together instead of the
+                  traditional ganache method of pouring heated cream over chocolate. Mine needed a few sessions in the
+                  microwave with stirring in between. I started with 20 seconds, stirred it to get it to mostly come
+                  together, then repeated the process, heating in 10 second increments.
+                  <br>
+                  <br>
+                  I ended up straining the ganache, since there were still tiny bits of Chocolate Strawberry in there
+                  that were too
+                  stubborn to dissolve completely. I’ve never strained ganache before, but it worked perfectly and the
+                  ganache was silky smooth.
+                  <br>
+                  <br>
+                  You need to let the ganache cool completely and thicken up. I let mine sit overnight because I like to
+                  spread out my baking, but 2-3 hours or so should be enough (maybe less).
+                  <br>
+                  <br>
+                  I didn’t need to heat it up at all the next day, and it worked fine for the drip (on a well chilled
+                  cake). It could have been a touch thicker so the drips didn’t go all the way down, but I think it
+                  worked out okay.
+                  <br>
+                  <br>
+                  If you’re adding some of the ganache between the layers (recommended for added flavor), be careful not
+                  to add too much, as it will affect the stability of the cake. You don’t want your layers sliding
+                  around! Just drizzle a bit over top of the frosting on each layer as you’re stacking. At this point
+                  you could also sprinkle on some chopped hazelnuts. I didn’t, but it would be a nice flavor/texture
+                  addition.
+                  <br>
+                  <br>
+                  Let the ganache set a bit before doing the piping on the top. To do this, I used a variety of French
+                  Star tips: 6B, 4B, and 32.
+
+                </p>
+                <center><img src="./ASSESTS/IMAGES/bananacakead.webp" alt=""></center>
+                <h1 class="text-danger fst-italic"><strong>How to use a Cake Comb:</strong></h1>
+
+                <p>
+                  Using a cake comb on the sides of a cake is a simple way to create a stunning effect. I used the left
+                  side of the right cake comb from this set for this Banana Split Cake. I’ve used
+                  a cake comb before,
+                  and
+                  it’s honestly my new favorite thing to do.
+                  <br>
+                  <br>
+                  To decorate a cake using a cake comb, you crumb coat, chill, and frost your cake as normal, but use
+                  more frosting on the sides than you typically would. You’ll be doing a lot of passes with the comb and
+                  scraping it off, so I find it’s better to build it up first. Once the sides and top are frosted, I
+                  take a large icing scraper to smooth the sides out, then start doing passes with the cake comb.
+                  <br>
+                  <br>
+                  You press the cake comb into the side of the cake, and do one continuous sweep while turning your cake
+                  turntable. After the first pass, you’ll see if you need to add more frosting to certain areas. Repeat
+                  until you’re happy with the result. It took me about 10 passes or so for this Nutella Cake.
+                </p>
+                <center><img src="./ASSESTS/IMAGES/bananacakeae.webp" alt=""></center>
+                <h3 class="fs-2 text-secondary"><strong>If you’re a Banana Split fan or have one
+                    in your life,
+                    this cake is for you! I hope
+                    you love it as much as we did here.</strong></h3>
+                <br>
+                <br>
+                <img src="./ASSESTS/IMAGES/bananacakeaf.webp" alt="" width="800px" height="750px">
+
+                <h1 class="text-danger fs-1 m-5"><strong>THANK YOU!!</strong></h1>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <br>
+  <br>
+
+
+  <!-- Footer -->
+
+  <footer class="d-flex justify-content-between text-light fst-normal" style="background-color: #5A1E2D;">
+
+
+    <div>
+      <h2 class="text-danger">Need Help?</h2>
+      <p>
+        📞+03 111 109 679</p>
+      <p>(Mon - Sat: 9:30am - 10:00pm | Sun: 11am - 8pm)</p>
+      <p>
+        📩eshop@cakerecipiesblog.com</p>
+    </div>
+
+
+    <div>
+      <h2 class="text-primary">Customer Service</h2>
+      <p>Contact Us</p>
+      <p>Delivery & Orders</p>
+      <p>Returns & Exchanges</p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Track My Order</p>
+      <p>Payment Guide</p>
+      <p>Fabric Glossary</p>
+    </div>
+
+
+    <div>
+      <h2 class="text-warning">Company</h2>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>Store Addresses</p>
+      <p>Corporate</p>
+    </div>
+
+
+    <div style=" font-size: 35px;">
+      <h2 class="text-success">Follow Us</h2>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+
+
+
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
