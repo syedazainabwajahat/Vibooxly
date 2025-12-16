@@ -1,0 +1,204 @@
+/* ====== FOOTER BASE STYLE ====== */
+footer {
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer div {
+  min-width: 200px;
+}
+
+footer h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+footer p, 
+footer i {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+
+/* ====== DESKTOP (Large screens) ====== */
+@media (min-width: 992px) {
+  footer {
+    justify-content: space-between;
+    text-align: left;
+    padding: 50px 80px;
+  }
+}
+
+/* ====== TABLET (768px - 991px) ====== */
+@media (max-width: 991px) and (min-width: 768px) {
+  footer {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  footer div {
+    width: 45%;
+  }
+}
+
+/* ====== MOBILE (Below 768px) ====== */
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  footer i {
+    font-size: 26px;
+    margin: 6px;
+  }
+}
+
+
+
+
+/* ---------------------- */
+/*  EXTRA SMALL DEVICES   */
+/*        MOBILE          */
+/*     max-width: 575px   */
+/* ---------------------- */
+@media (max-width: 575px) {
+
+  /* Navbar */
+  .navbar-brand h1 {
+    font-size: 28px !important;
+  }
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  form .form-control {
+    font-size: 14px;
+  }
+
+  /* Cards */
+  .card {
+    width: 90% !important;
+    margin: auto;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+
+  /* Carousel */
+  .carousel-item img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  /* Headings */
+  h1, h3 {
+    font-size: 22px !important;
+  }
+
+  /* Modals */
+  .modal-dialog {
+    max-width: 90%;
+  }
+  .modal-body img {
+    height: auto;
+  }
+}
+
+/* ---------------------- */
+/*   SMALL DEVICES        */
+/*       PHABLETS         */
+/*   576px - 767px        */
+/* ---------------------- */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .card {
+    width: 70% !important;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .navbar-brand h1 {
+    font-size: 32px !important;
+  }
+}
+
+
+/* ---------------------- */
+/*   MEDIUM DEVICES       */
+/*       TABLETS          */
+/*   768px - 991px        */
+/* ---------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .card {
+    width: 40% !important;
+  }
+
+  .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .navbar-brand h1 {
+    font-size: 36px !important;
+  }
+}
+
+
+/* ---------------------- */
+/*   LARGE DEVICES        */
+/*   LAPTOP / DESKTOP     */
+/*   992px - 1199px       */
+/* ---------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .card {
+    width: 22% !important;
+  }
+
+  .carousel-item img {
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+
+/* ---------------------- */
+/* X-LARGE DEVICES        */
+/*   BIG MONITORS         */
+/* 1200px + ABOVE         */
+/* ---------------------- */
+@media (min-width: 1200px) {
+  .card {
+    width: 18rem !important;
+  }
+
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+
+
